@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import VideoList from './components/Videos/VideoList';
+import VideoForm from './components/Videos/VideoForm';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={VideoList} />
+        <Route path="/new-video" component={VideoForm} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
