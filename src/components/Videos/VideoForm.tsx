@@ -3,7 +3,7 @@ import React from 'react'
 const VideoForm = () => {
     return (
         <div>
-            Video Form
+            <h1>Video From Component</h1>
         </div>
     )
 }

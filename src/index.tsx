@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+//rutas
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+//componentes
 import VideoList from './components/Videos/VideoList';
 import VideoForm from './components/Videos/VideoForm';
 
